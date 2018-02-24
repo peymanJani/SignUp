@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="#CFD8DC"
+    tools:context="com.s_example.signup.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:gravity="center"
+        android:textSize="24sp"
+         />
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/li_style"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/user"
+            android:paddingLeft="6dp"
+            android:layout_width="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:layout_height="30dp"
+            android:hint="@string/user_name"
+            style="@style/Base.TextAppearance.AppCompat"
+            android:background="#C5E1A5"
+           />
+
+        <EditText
+            android:id="@+id/password"
+            android:paddingLeft="6dp"
+            android:layout_gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:hint="@string/password"
+            android:inputType="numberPassword"
+            style="@style/Base.TextAppearance.AppCompat"
+            android:background="#AED581"/>
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_create" />
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginTop="10dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
